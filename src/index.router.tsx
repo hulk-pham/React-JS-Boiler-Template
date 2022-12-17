@@ -32,6 +32,10 @@ const router = createBrowserRouter([
         // action: logoutUser,
       },
       {
+        path: "/404",
+        element: <ErrorPage />,
+      },
+      {
         path: "dashboard",
         element: <LazyDashboardPage />,
         loader: requireLoginMiddleware,

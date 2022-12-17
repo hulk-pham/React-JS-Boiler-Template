@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Feature
+
+- React.js 18
+- React router
+- SASS
+- Charka UI
+- Redux and Redux toolkit
+- Redux persist
+- React helmet
+- Prettier, Husky, Lint
+- React hook form
+- Yup
+- React snap
+- React testing library
+- Atomic architecture
+
 ## Available Scripts
 
 In the project directory, you can run:

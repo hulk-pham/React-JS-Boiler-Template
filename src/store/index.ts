@@ -27,5 +27,6 @@ const store = configureAppStore();
 
 export type RootState = ReturnType<typeof store.getState>;
 export type StoreDispatch = typeof store.dispatch;
+export type AppStore = ReturnType<typeof configureAppStore>;
 
 export default store;
