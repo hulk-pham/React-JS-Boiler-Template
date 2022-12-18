@@ -1,3 +1,4 @@
+import "utils/wdyr";
 import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import { hydrate, render } from "react-dom";

@@ -21,7 +21,7 @@ const schema = yup
   })
   .required();
 
-function SampleForm() {
+function SampleForm({ token }: any) {
   const {
     handleSubmit,
     register,
@@ -35,8 +35,7 @@ function SampleForm() {
   const onSubmit: SubmitHandler<SampleFormValues> = (values) => {
     return new Promise<void>((resolve) => {
       setTimeout(() => {
-        alert(JSON.stringify(values, null, 2));
-        dispatch(setToken("token here"));
+        dispatch(setToken(values.name));
         resolve();
       }, 1000);
     });
@@ -57,5 +56,8 @@ function SampleForm() {
     </form>
   );
 }
+
+// optional - only for debugging
+SampleForm.whyDidYouRender = true;
 
 export default SampleForm;

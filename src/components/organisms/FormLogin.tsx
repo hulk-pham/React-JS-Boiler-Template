@@ -8,4 +8,6 @@ function FormLogin() {
   );
 }
 
+FormLogin.whyDidYouRender = true;
+
 export default FormLogin;
