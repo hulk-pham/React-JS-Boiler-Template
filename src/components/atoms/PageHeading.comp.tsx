@@ -1,5 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 function PageHeading() {
-  return <p>This is page heading</p>;
+  const { t } = useTranslation();
+  return <p>{t("Welcome to React")}</p>;
 }
 
 export default PageHeading;

@@ -1,4 +1,3 @@
-import "utils/wdyr";
 import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import { hydrate, render } from "react-dom";
@@ -7,6 +6,8 @@ import { Provider } from "react-redux";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import store from "store";
+import "utils/wdyr";
+import "./i18n";
 import AppRouter from "./index.router";
 import reportWebVitals from "./report-web-vitals";
 

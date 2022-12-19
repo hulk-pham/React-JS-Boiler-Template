@@ -1,4 +1,5 @@
 import "@testing-library/jest-dom";
+import i18next from "i18n";
 import { screen } from "@testing-library/react";
 import { rest } from "msw";
 import { setupServer } from "msw/node";
@@ -19,7 +20,9 @@ afterEach(() => server.resetHandlers());
 
 afterAll(() => server.close());
 
-test("fetches & receives a user after clicking the fetch user button", async () => {
+test("render login page", async () => {
   renderWithProviders(<LoginPage />);
-  expect(screen.getByText(/This is page heading/i)).toBeInTheDocument();
+  expect(
+    screen.getByText(new RegExp(i18next.t("Welcome to React") || "", "i"))
+  ).toBeInTheDocument();
 });
