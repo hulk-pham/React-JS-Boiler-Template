@@ -1,5 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { combineReducers } from "redux";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import type { PreloadedState } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import authReducer from "./slices/auth.slices";
@@ -15,9 +15,10 @@ const reducers = combineReducers({
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
-export function configureAppStore() {
+export function configureAppStore(preloadedState?: PreloadedState<RootState>) {
   const store = configureStore({
     reducer: persistedReducer,
+    preloadedState,
   });
 
   return store;
@@ -25,8 +26,8 @@ export function configureAppStore() {
 
 const store = configureAppStore();
 
-export type RootState = ReturnType<typeof store.getState>;
-export type StoreDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof persistedReducer>;
 export type AppStore = ReturnType<typeof configureAppStore>;
+export type StoreDispatch = AppStore["dispatch"];
 
 export default store;

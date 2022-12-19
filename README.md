@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Feature
 
 - React.js 18
+- Typescript
 - React router
 - SASS
 - Charka UI
@@ -15,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React hook form
 - Yup
 - React snap
-- React testing library
+- React testing library, Jest, MSW
 - Atomic architecture
 
 ## Available Scripts
