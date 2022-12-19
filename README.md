@@ -13,9 +13,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Redux persist
 - React helmet
 - Prettier, Husky, Lint
-- React hook form
-- Yup
+- React hook form, Yup
 - React snap
+- Axios, SWR
 - React testing library, Jest, MSW
 - Atomic architecture
 
