@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Typescript
 - React router
 - SASS
+- Storybook
 - Charka UI
 - Redux and Redux toolkit
 - Redux persist
