@@ -18,6 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React snap
 - Axios, SWR
 - React testing library, Jest, MSW
+- Docker, Nginx pre-config
 - Atomic architecture
 
 ## Available Scripts
