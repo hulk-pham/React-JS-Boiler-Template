@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# ReactJS Boiler Template
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Feature
 
 - React.js 18
+- Craco
 - Typescript
 - React router
 - SASS
