@@ -9,7 +9,8 @@
     "test": "craco test",
     "postbuild": "react-snap",
     "eject": "react-scripts eject",
-    "eslint": "eslint --ext js,ts,tsx"
+    "eslint": "eslint --ext js,ts,tsx",
+    "test:coverage": "yarn run test --watchAll=false --coverage"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
@@ -63,6 +64,25 @@
     "msw": "^0.49.2",
     "prettier": "2.8.1",
     "react-snap": "^1.23.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*/*.d.ts",
+      "!src/**/*/Loadable.{js,jsx,ts,tsx}",
+      "!src/**/*/messages.ts",
+      "!src/reportWebVitals.ts",
+      "!src/**/*/types.ts",
+      "!src/index.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   },
   "browserslist": {
     "production": [
