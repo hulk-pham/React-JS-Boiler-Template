@@ -1,3 +1,5 @@
+import { Box } from "@chakra-ui/react";
+
 const AuthTemplate = ({
   HeaderComp,
   ContentComp,
@@ -8,11 +10,11 @@ const AuthTemplate = ({
   FooterComp: React.ReactNode;
 }) => {
   return (
-    <>
+    <Box p={"3rem"}>
       {HeaderComp || <></>}
       {ContentComp || <></>}
       {FooterComp || <></>}
-    </>
+    </Box>
   );
 };
 

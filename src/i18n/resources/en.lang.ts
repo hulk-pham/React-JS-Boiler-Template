@@ -1,6 +1,10 @@
+// Default language
 const en = {
   translation: {
-    "Welcome to React": "Welcome to React and react-i18next",
+    Welcome_to_React: "Welcome to React and react-i18next",
+    home: {
+      page: "Hello",
+    },
   },
 };
 

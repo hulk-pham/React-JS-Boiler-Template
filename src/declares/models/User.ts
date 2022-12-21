@@ -1,4 +1,4 @@
-import Model from "declare/interfaces/Model";
+import Model from "declares/interfaces/Model";
 
 interface User extends Model {
   firstName: string;

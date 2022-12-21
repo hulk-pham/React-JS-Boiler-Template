@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ENV } from "declare/env";
+import { ENV } from "declares/env";
 import useSWR from "swr";
 
 const fetcher = (url: string) => axios.get(url).then((res) => res.data);

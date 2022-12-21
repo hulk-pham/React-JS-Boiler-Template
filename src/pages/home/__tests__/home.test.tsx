@@ -1,10 +1,9 @@
 import "@testing-library/jest-dom";
-import i18next from "i18n";
 import { screen } from "@testing-library/react";
 import { rest } from "msw";
 import { setupServer } from "msw/node";
 import { renderWithProviders } from "utils/test-utils";
-import LoginPage from "../login.page";
+import HomePage from "../index.page";
 
 export const handlers = [
   rest.get("/api/user", (req, res, ctx) => {
@@ -21,8 +20,6 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 test("render login page", async () => {
-  renderWithProviders(<LoginPage />);
-  expect(
-    screen.getByText(new RegExp(i18next.t("Welcome_to_React") || "", "i"))
-  ).toBeInTheDocument();
+  renderWithProviders(<HomePage />);
+  expect(screen.getByText(new RegExp("Home", "i"))).toBeInTheDocument();
 });
