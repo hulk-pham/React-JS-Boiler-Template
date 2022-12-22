@@ -1,4 +1,4 @@
-import SampleForm from "components/mocules/SampleForm";
+import SampleForm from "components/mocules/sample-form";
 
 function FormLogin() {
   return (

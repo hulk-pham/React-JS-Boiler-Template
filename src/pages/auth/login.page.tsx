@@ -1,7 +1,7 @@
-import Logo from "components/atoms/Logo.comp";
-import PageHeading from "components/atoms/PageHeading.comp";
-import SampleForm from "components/mocules/SampleForm";
-import AuthTemplate from "components/templates/Auth.template";
+import Logo from "components/atoms/logo.comp";
+import PageHeading from "components/atoms/page-heading.comp";
+import SampleForm from "components/mocules/sample-form";
+import AuthTemplate from "components/templates/auth.template";
 
 const Login = () => {
   return (

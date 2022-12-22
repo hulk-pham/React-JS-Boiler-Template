@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useHomeController } from "./home.controller";
 
 const Home = () => {
+  const { homeData } = useHomeController();
+  console.log(homeData.data?.[0].content);
+
   return (
     <div>
       <ul>
@@ -18,5 +22,7 @@ const Home = () => {
     </div>
   );
 };
+
+Home.whyDidYouRender = true;
 
 export default Home;

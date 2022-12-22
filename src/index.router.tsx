@@ -1,4 +1,4 @@
-import SuspenceLoading from "components/atoms/SuspenceLoading.comp";
+import SuspenceLoading from "components/atoms/suspence-loading.comp";
 import { redirectIfUserMiddleware, requireLoginMiddleware } from "middlewares";
 import Login from "pages/auth/login.page";
 import ErrorPage from "pages/error.page";
