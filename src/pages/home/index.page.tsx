@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import { useHomeController } from "./home.controller";
 
 const Home = () => {
-  const { homeData } = useHomeController();
-  console.log(homeData.data?.[0].content);
-
+  const { userData } = useHomeController();
   return (
     <div>
       <ul>
@@ -19,6 +17,10 @@ const Home = () => {
         </li>
       </ul>
       Home
+      <p>
+        Current User:{" "}
+        {userData?.data?.firstName + " " + userData?.data.lastName}
+      </p>
     </div>
   );
 };

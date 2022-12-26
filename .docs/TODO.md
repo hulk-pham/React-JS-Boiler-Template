@@ -9,9 +9,17 @@
 - husky
 - ci/cd
 - unit test/automation test
-- authentication
 - translate
 - constant/hardcode
 - config
 - seo
 - PWA base
+- authentication flow request
+- naming convention docs
+- auto-testing with call api
+- redux dev tool
+
+Docs
+// call api ở đâu? hooks >< redux
+// logic ở đâu? models, utils, services,
+// phân chia components? theo layers, theo modules
