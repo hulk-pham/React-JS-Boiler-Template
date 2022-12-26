@@ -17,6 +17,7 @@
 - React snap
 - Axios, SWR
 - React testing library, Jest, MSW
+- E2E testing with Cypress
 - Docker, Nginx pre-config
 - Atomic architecture
 
@@ -46,4 +47,10 @@ yarn test
 docker build . -t dockerized-react
 
 docker run -p 3000:80 -d dockerized-react
+```
+
+## Open cypress
+
+```
+npm run cypress:open
 ```
