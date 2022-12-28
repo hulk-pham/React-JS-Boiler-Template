@@ -18,8 +18,3 @@
 - naming convention docs
 - auto-testing with call api
 - redux dev tool
-
-Docs
-// call api ở đâu? hooks >< redux
-// logic ở đâu? models, utils, services,
-// phân chia components? theo layers, theo modules

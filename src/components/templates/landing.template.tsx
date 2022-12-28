@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 
-const AuthTemplate = ({
+function LandingTemplate({
   HeaderComp,
   ContentComp,
   FooterComp,
@@ -8,7 +8,7 @@ const AuthTemplate = ({
   HeaderComp: React.ReactNode;
   ContentComp: React.ReactNode;
   FooterComp: React.ReactNode;
-}) => {
+}) {
   return (
     <Box>
       {HeaderComp}
@@ -18,6 +18,6 @@ const AuthTemplate = ({
       {FooterComp}
     </Box>
   );
-};
+}
 
-export default AuthTemplate;
+export default LandingTemplate;

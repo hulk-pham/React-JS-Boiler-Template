@@ -1,20 +1,17 @@
-import Logo from "components/atoms/logo.comp";
-import PageHeading from "components/atoms/page-heading.comp";
-import SampleForm from "components/mocules/sample-form";
+import Footer from "components/mocules/footer";
+import FormLogin from "components/organisms/form-login";
+import Header from "components/mocules/header";
 import AuthTemplate from "components/templates/auth.template";
+import { useLoginController } from "./login.controller";
 
 const Login = () => {
+  const { onSubmitLogin } = useLoginController();
   return (
     <div>
       <AuthTemplate
-        HeaderComp={
-          <>
-            <PageHeading />
-            <Logo />
-          </>
-        }
-        ContentComp={<SampleForm />}
-        FooterComp={<p>This is footer</p>}
+        HeaderComp={<Header />}
+        ContentComp={<FormLogin onSubmitLogin={onSubmitLogin} />}
+        FooterComp={<Footer />}
       />
     </div>
   );

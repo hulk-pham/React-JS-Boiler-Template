@@ -23,13 +23,15 @@ export function useAPISyncStore<T>({
   const dispatch = useStoreDispatch();
 
   useEffect(() => {
-    if (data) {
-      dispatch(setAction(data));
+    if (dispatch && setAction) {
+      if (data) {
+        dispatch(setAction(data));
+      }
+      if (error) {
+        dispatch(setAction(data));
+      }
     }
-    if (error) {
-      dispatch(setAction(data));
-    }
-  }, [data, error]);
+  }, [data, error, dispatch, setAction]);
 
   return {
     data: storeData,

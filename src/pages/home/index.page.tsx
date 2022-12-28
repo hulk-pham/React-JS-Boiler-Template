@@ -1,30 +1,18 @@
-import { Link } from "react-router-dom";
+import Footer from "components/mocules/footer";
+import Header from "components/mocules/header";
+import HomePageContent from "components/organisms/home-page-content";
+import LandingTemplate from "components/templates/landing.template";
 import { useHomeController } from "./home.controller";
 
 const Home = () => {
-  const { userData } = useHomeController();
+  const {} = useHomeController();
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-      </ul>
-      Home
-      <p>
-        Current User:{" "}
-        {userData?.data?.firstName + " " + userData?.data.lastName}
-      </p>
-    </div>
+    <LandingTemplate
+      HeaderComp={<Header />}
+      ContentComp={<HomePageContent />}
+      FooterComp={<Footer />}
+    />
   );
 };
-
-Home.whyDidYouRender = true;
 
 export default Home;

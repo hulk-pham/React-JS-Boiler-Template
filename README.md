@@ -54,3 +54,7 @@ docker run -p 3000:80 -d dockerized-react
 ```
 npm run cypress:open
 ```
+
+## Charka UI template
+
+(Public page)[https://chakra-templates.dev/]
